@@ -1,0 +1,47 @@
+AjaXplorer 3.2.4 includes a large amount of bug fixes, plus some minor but interesting features : open any file type with any « editor » plugin or in a new browser window (integration to the core of the hook.openfile plugin), various Css3 tweaking for a better looking ( I hope you’ll like it! ), and a better support of streaming (http-range) that should also impact on resumable downloads. The last ones being part of a more generic amelioration for supporting the brand new AjaXplorer iOS client!
+
+[PLUGINS]
+Imagick : comment svg case
+Email viewer : fix conflict with mp3 plugin
+Exif : Heulman fix for lat/long sign
+Generic checks : Fix performChecks for folder case
+Diaporama : Pthumb does not generate thumbnails on BMP/PXD files
+Editor.browser & Editor.other : New editors for opening in external window and for choosing any other editor
+Enrich editors declaration : previewProvider / editor order, allow wildcard for mimes and handle them accordingly.
+Disable TextEditor by default, it's useless and can be totally replaced by codemirror
+TmpFile reference : Use silentUnlink instead of unlink for shutdown functions
+File download : bigger buffer size
+Use credentials_consumer mixin for webdav driver
+Auth.multi : Copy TRANSMIT_CLEAR_PASS to sub-driver option
+Auth.ftp : put Logout action in the user widget, like the standard one
+
+
+[CORE SERVER] 
+Fix zip : define pclzip tmpdir
+Try to detect mime type automatically using fileinfo extension
+Sanitize alphanum for user logins
+Open a second instance : detect window.opener.ajxpBootstrap, and do not reload boot_conf in that case. Thus, do not invalidate token anymore.
+Add a symbolic link to ajxp_access.log to the latest file
+Move AJXP_CACHE_DIR definition inside base.conf.php inside of conf.php, to store the plugins_*.ser files inside this cache folder.
+Make sure not send invalid xml attributes / throw consistent error when repository
+Fix utf8 on pending folder
+clear_plugins_cache GET parameter
+
+[CORE GU]
+Nice rework of the tree and the list
+Rework tabs and image preview in a css3 way
+Fix tree : click on plus sign / update openIcon
+Reset repository to be sure to reload if there was an error and fix the empty root node syndrom
+Re-style diagnostic results
+I18N Updates
+
+
+[WEBDAV SUPPORT]
+Fix AJXP_USER repositories (defer accessDriver initialisation)
+Fix wrong repository browsing with webDAV
+Fix PHP 5.1.X support (includes CentOs), by adding a simple DateTime class in compat.php
+
+[iOS ADAPTATION]
+ios plugin for proposing redirection to iphone ajaxplorer
+iphone optim : support for streaming, and use thumbnails a bit bigger
+declare streaming as supported

@@ -1,0 +1,22 @@
+I'm pleased to announce the release of AjaXplorer 3.2.4, which includes a large amount of bug fixes, plus some minor but interesting features : open any file type with any "editor" plugin or in a new browser window (integration to the core of the hook.openfile plugin), various Css3 tweaking for a better looking ( I hope you'll like it! ), and lot of fixes on the previously introduced WebDAV support, that should now work on CentOS.  A better support of streaming (http-range) should also impact on the ability to resume downloads, this being part of a more generic amelioration for supporting the brand new AjaXplorer iOS client.
+The dedicated AjaXplorer client for iPhone and iPad brings a tight integration of an Ajaxplorer server and an iOS device. This is NOT open-source nor free, considered the time spent on maintaining the core project over the last years. But it's cheap, useful, and the detailed info can be found my other personal site, cdujeu.com.
+
+[Links]
+Licence : LGPL
+Documentation : www.ajaxplorer.info/documentation-3/
+Demo : http://www.ajaxplorer.info/demo/
+Forum : http://www.ajaxplorer.info/forum/
+Full release note : http://www.ajaxplorer.info/wordpress/releases/ajaxplorer-3-2-4/
+
+[Upgrade - config files]
+
+The AJXP_CACHE_DIR variable was moved from conf.php to base.conf.php, so that the two plugins caches files are now stored inside the "cache" folder, which is... logical. Except from this, upgrade should  follow the standard procedure. I know, this is still not very handy, a simpler upgrade mechanism is indeed on the top priority list.
+
+[You like it?]
+
+Please support this software by a donation. You can also hire me for specific developement on the AjaXplorer base : team (at) ajaxplorer (dot) info. Or the very minimal support would be to spread the word on Facebook, vote for AjaXplorer on Sourceforge or Freshmeat!
+
+------------------------------------------------------------------
+Licence : LGPL
+Copyright : 2008-2011 Charles du JEU
+Docs & Install infos : http://www.ajaxplorer.info/
