@@ -1,0 +1,5 @@
+09-18-11 6:43:26	92.24.175.254	INFO	shared	Create User	user_id=admin
+09-18-11 6:43:40	92.24.175.254	INFO	admin	Log In	
+09-18-11 6:46:43	92.24.175.254	INFO	admin	error	message=Cannot create root path for repository (Default Files). Please check repository configuration or that your folder is writeable!
+09-18-11 8:50:21	91.125.70.108	INFO	admin	Log In	
+09-18-11 9:16:13	91.125.70.108	INFO	admin	Log In	

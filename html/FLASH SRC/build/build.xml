@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="com.hobnox.astroBeta" default="default" basedir="../">
+	
+	<property file="./build/build.properties"/>
+	
+	<target name="astro.props">
+		<fail unless="flex.sdk">The "flex.sdk" property must be set in build/build.properties.</fail>
+		<fail unless="flex.sdk.bin">The "flex.sdk.bin" property must be set in build/build.properties.</fail>
+		<fail unless="flex.sdk.libs">The "flex.sdk.libs" property must be set in build/build.properties.</fail>
+		<fail unless="asdoc.exec">The "asdoc.exec" property must be set in build/build.properties.</fail>
+		<fail unless="mxmlc.exec">The "mxmlc.exec" property must be set in build/build.properties.</fail>
+		<fail unless="compc.exec">The "compc.exec" property must be set in build/build.properties.</fail>
+	</target>
+	
+	<target name="astro.removeSwf" if="swf">
+		<delete file="./bin/${swf}.swf"/>
+	</target>
+			
+	<target name="default" depends="astro.props">
+		<antcall target="astro.removeSwf">
+			<param name="swf" value="Main"/>
+		</antcall>
+		<available file="${flex.sdk.libs}/playerglobal.swc" property="sdk.version.flex2"/>
+		<echo level="info" message="Using version 3.x SDK ..."/>
+		<exec executable="${mxmlc.exec}" dir="${basedir}">
+			<arg line="'./src/Main.as'"/>
+			<arg line="-o './bin/Main.swf'"/>
+			<arg line="-sp './src'"/>
+			<arg line="-sp './../PopforgeLibrary/src'"/>
+			<arg line="-sp '${flex.sdk}/frameworks/locale/en_US'"/>
+			<arg line="-l '${flex.sdk.libs}/player/10/playerglobal.swc'"/>
+			<arg line="-l '${flex.sdk.libs}/flex.swc'"/>
+		</exec>
+		<exec executable="${flashPlayer.exec}" dir="${basedir}" spawn="yes" osfamily="windows">
+			<arg line="./bin/Main.swf"/>
+		</exec>
+		<exec executable="open" dir="." osfamily="unix">
+			<arg line="-a ${flashPlayer.exec} ${basedir}/bin/Main.swf" />
+		</exec>
+	</target>
+	
+</project>

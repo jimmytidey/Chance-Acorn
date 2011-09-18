@@ -1,0 +1,142 @@
+	body {
+	
+		background-image:url(bg.png); 
+		background-repeat:repeat;
+	
+	}
+	
+	#container {
+		position:absolute;
+		width: 1100px; 
+		left:50%; 
+		margin-left:-550px; 
+		border:1px solid black; 
+		background-color:white;
+		padding-left:30px;
+		font-family: Baskerville,"Baskerville old face","Hoefler Text",Garamond,"Times New Roman",serif;
+	}
+	
+	#controls {
+		margin-bottom:40px; 
+		-moz-box-shadow: 3px 3px 4px #ccc;
+		-webkit-box-shadow: 3px 3px 4px#ccc;
+		box-shadow: 3px 3px 4px #ccc;			
+		margin-bottom: 30px;
+		padding: 10px;
+		width: 1020px;		
+	    border:1px solid black;
+	}
+	
+	
+	#edit_grid {
+		margin-bottom:50px;
+		width:1000px;
+		border:1px solid black;
+		padding:20px;
+		-moz-box-shadow: 3px 3px 4px #ccc;
+		-webkit-box-shadow: 3px 3px 4px#ccc;
+		box-shadow: 3px 3px 4px #ccc;	
+	}
+	
+	
+	.bank_option {
+		clear:both; 
+		height:26px;
+	}
+	
+	
+	.bank_name {
+		clear:both; 
+		margin-top:0px;
+	}
+	
+	.bank_option_name {
+		width:100px; 
+		float:left;
+		margin:0px;
+	
+	}
+	
+	.volume {
+		width:80px; 
+		float:left; 
+	}
+	
+	.loop_option {
+		float:left;
+		width:14px;
+		margin-top: -1px;
+	}
+	
+	.overplay {
+		float: left;
+		margin-left: 6px;
+		margin-top: -1px;
+		width: 14px;
+	}
+	
+	.bank_option .switches div {
+		width:10px;
+		height:10px;
+		margin-left:5px; 
+		border:1px solid black; 
+		float:left;
+		cursor:pointer; 
+	}
+
+	.switch_0, .switch_ {
+		background-color:#fff;
+	}
+	
+	.switch_1 {
+		background-color:#ddd;
+	}
+	
+	.switch_2 {
+		background-color:#999;
+	}
+	
+	.switch_3 {
+		background-color:#000;
+	}	
+
+	
+	#explorer {	
+		width:1040px;
+		height:400px; 
+		margin-bottom:40px;
+		-moz-box-shadow: 3px 3px 4px #ccc;
+		-webkit-box-shadow: 3px 3px 4px#ccc;
+		box-shadow: 3px 3px 4px #ccc;	
+	}
+	
+	
+	#volume_label {
+		font-size: 13px;
+		left: 104px;
+		position: relative;
+		top: 40px;
+		display:inline;
+	}
+	
+	#loop_label {
+		-moz-transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg); 
+		left: 140px;
+		position: relative;
+		top: 29px;
+		width: 30px;	
+		font-size: 13px;
+		display:inline;
+	}	
+	
+	#overplay_label {
+		-moz-transform: rotate(-60deg);
+		-webkit-transform: rotate(-60deg); 
+		font-size: 13px;
+		left: 126px;
+		position: relative;
+		top: 22px;
+		width: 30px;
+		display:inline;
+	}		
