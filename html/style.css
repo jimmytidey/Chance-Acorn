@@ -39,6 +39,11 @@
 	}
 	
 	
+	#flash {
+		position:absolute;
+	
+	}
+	
 	.bank_option {
 		clear:both; 
 		height:26px;
