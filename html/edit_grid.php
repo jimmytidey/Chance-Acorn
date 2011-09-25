@@ -12,8 +12,6 @@ $escaped_project_string = str_replace (' ',  '\ ', $project_name );
 
 $command_string = "chmod -R 777 projects/$escaped_project_string";
 
-print($command_string);
-
 shell_exec ($command_string);
  
 
