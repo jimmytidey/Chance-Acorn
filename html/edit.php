@@ -68,7 +68,7 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 
 		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
 		<param name="wmode" value="transparent">
-		width="1000" height="700" id="Untitled-1" align="middle">
+		<width="1000" height="700" id="Untitled-1" align="middle">
 		<param name="allowScriptAccess" value="sameDomain" />
 		<param name="movie" value="audio_player.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
 		<param name="quality" value="high" />
