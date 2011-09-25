@@ -13,7 +13,6 @@ $escaped_project_string = str_replace (' ',  '\ ', $project_name );
 $command_string = "chmod -R 777 projects/$escaped_project_string";
 
 shell_exec ($command_string);
- 
 
 $project_info = read_json('projects/'.$project_name.'/project_info.json');
 
