@@ -44,7 +44,7 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 
 <div id='container'> 
 	
-	<h3><a href='http://jimmytidey.co.uk/chance_acorn/'>Back</a>  |  <span id='project_name'><?=$project_name ?></span> </h3> 
+	<h3><a href='http://chance-acorn.jimmytidey.co.uk/'>Back</a>  |  <span id='project_name'><?=$project_name ?></span> </h3> 
 	
 	<div id='controls'> 
 		<form method="get" action="<?php echo $PHP_SELF;?>">
