@@ -31,12 +31,14 @@ foreach ($bank_array as $bank) {
 		
 		$audio_file_array = structure_list('projects/'.$project_name."/".$bank."/".$bank_option, "file");
 		
-		foreach ($audio_file_array as $audio_file) {
+		if (count($audio_file_array) > 0) {
+			foreach ($audio_file_array as $audio_file) {
 						
-			if ($audio_file != 'bank_option_info.json') {
-				$json['banks'][$i]['bank_options'][$j]['file_location'] = 'projects/'.$project_name."/".$bank."/".$bank_option."/".$audio_file; 
+				if ($audio_file != 'bank_option_info.json') {
+					$json['banks'][$i]['bank_options'][$j]['file_location'] = 'projects/'.$project_name."/".$bank."/".$bank_option."/".$audio_file; 
+				}
 			}
-		}
+		}	
 		$j++;
 	}
 	$i++;
