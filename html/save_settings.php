@@ -12,7 +12,7 @@ $project_info_array['steps'] = $_GET['steps'];
 
 write_json('projects/'.$project_name.'/project_info.json', $project_info_array);
 
-//need to loop through all the json files and chance the length of the sequence 
+//need to loop through all the json files and change the length of the sequence 
 
 $bank_array = structure_list('projects/'.$project_name, "dir");
 
