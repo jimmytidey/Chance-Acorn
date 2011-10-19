@@ -37,11 +37,13 @@
 		-moz-box-shadow: 3px 3px 4px #ccc;
 		-webkit-box-shadow: 3px 3px 4px#ccc;
 		box-shadow: 3px 3px 4px #ccc;	
+		z-index:20;
 	}
 	
 	
 	#flash {
 		position:absolute;
+		z-index:10;
 	}
 	
 	.bank_option {
