@@ -70,10 +70,10 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		<param name="wmode" value="transparent">
 		<width="1000" height="700" id="Untitled-1" align="middle">
 		<param name="allowScriptAccess" value="sameDomain" />
-		<param name="movie" value="audio_player.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
+		<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
 		<param name="quality" value="high" />
 		<param name="bgcolor" value="#ffffff" />
-		<embed src="audio_player.swf?project_info_location=list.php?project_name=<?=$project_name ?>" quality="high" bgcolor="#ffffff" width="1000"
+		<embed src="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" quality="high" bgcolor="#ffffff" width="1000"
 		height="700" name="mymovie" align="middle" allowScriptAccess="sameDomain"
 		type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" />
 		</object> 			
