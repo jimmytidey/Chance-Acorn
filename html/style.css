@@ -43,9 +43,9 @@
 	
 	
 	#flash {
-	    left: 183px;
+	    left: 297px;
 	    position: absolute;
-	    top: 507px;
+	    top: 560px;
 	    z-index: 10;
 	}
 	
@@ -83,6 +83,11 @@
 		margin-left: 6px;
 		margin-top: -1px;
 		width: 14px;
+	}
+	
+	.switches {
+		margin-left:50px;
+		
 	}
 	
 	.bank_option .switches div {
