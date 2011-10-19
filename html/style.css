@@ -42,8 +42,10 @@
 	
 	
 	#flash {
-		position:absolute;
-		z-index:10;
+	    left: 183px;
+	    position: absolute;
+	    top: 507px;
+	    z-index: 10;
 	}
 	
 	.bank_option {
