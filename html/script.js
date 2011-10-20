@@ -85,7 +85,7 @@ grid.saveSettings = function() {
 	grid.refresh(); 
 }
 
-grid.poll() = function() {
+grid.poll = function() {
 	setTimeout("grid.refresh(); grid.poll();", 3000)
 }
 
