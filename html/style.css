@@ -37,13 +37,12 @@
 		-moz-box-shadow: 3px 3px 4px #ccc;
 		-webkit-box-shadow: 3px 3px 4px#ccc;
 		box-shadow: 3px 3px 4px #ccc;	
-		z-index:20;
-		position:absolute;
+	
 	}
 	
 	
 	#flash {
-	    left: 277px;
+	    left: 273px;
 	    position: absolute;
 	    top: 560px;
 	    z-index: 10;
@@ -94,6 +93,13 @@
 		float:left;
 		cursor:pointer; 
 	}
+	
+	.switches {
+		position:absolute;
+		z-index:200;
+		
+	}
+
 
 	.switch_0, .switch_ {
 		background-color:#fff;
