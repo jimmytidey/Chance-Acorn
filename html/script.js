@@ -85,6 +85,10 @@ grid.saveSettings = function() {
 	grid.refresh(); 
 }
 
+grid.poll() = function() {
+	setTimeout("grid.refresh(); grid.poll();", 3000)
+}
+
 $(document).ready(function() {
 	
 	//load the grid 
@@ -99,11 +103,8 @@ $(document).ready(function() {
 	});
 	
 	//this to poll server for file structure updates
-	function timer() {
-		setTimeout("grid.refresh(); timer();", 3000)
-	}
 
-	timer()
+	grid.poll()
 	
 	$('#save_settings').click(function() {
 		grid.saveSettings();
