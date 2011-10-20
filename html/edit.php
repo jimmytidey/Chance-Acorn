@@ -78,7 +78,7 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		</object> 			
 	</div>
 	
-	<iframe src='explorer?root=<?=$project_name ?>' id='explorer' frameborder="0" ></iframe>
+	<!--<iframe src='explorer?root=<?=$project_name ?>' id='explorer' frameborder="0" ></iframe> -->
 	
 	
 			
