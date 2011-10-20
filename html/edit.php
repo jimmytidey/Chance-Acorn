@@ -33,7 +33,7 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"> </script>
 
-	<script src="/js/js/jquery-ui.custom.min.js"></script>
+	<script src="js/js/jquery-ui.custom.min.js"></script>
 	
 	<script type="text/javascript" src='script.js' > </script>
 
@@ -57,7 +57,6 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		</form >
 	</div>
 	
-	<iframe src='explorer?root=<?=$project_name ?>' id='explorer' frameborder="0" ></iframe>
 
 
 	<input type='button' id='refresh' value='refresh' /> 
@@ -78,6 +77,9 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" />
 		</object> 			
 	</div>
+	
+	<iframe src='explorer?root=<?=$project_name ?>' id='explorer' frameborder="0" ></iframe>
+	
 	
 			
 <script type="text/javascript">

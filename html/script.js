@@ -98,6 +98,13 @@ $(document).ready(function() {
 		grid.refresh(); 
 	});
 	
+	//this to poll server for file structure updates
+	function timer() {
+		setTimeout("grid.refresh(); timer();", 3000)
+	}
+
+	timer()
+	
 	$('#save_settings').click(function() {
 		grid.saveSettings();
 	});

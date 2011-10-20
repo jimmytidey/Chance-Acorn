@@ -68,10 +68,9 @@ if (!empty($bank_array)) {
 					
 					?> <span class='switches'> <? 
 					for($step=0; $step < $step_count; $step++) {
-						echo "<div  class='switch_".$bank_option_info['sequence'][$step]."' state='".$bank_option_info['sequence'][$step]."'></div>";  
-					}
-					
-									
+						$left = $step * 17 ; 
+						echo "<div style='left:".$left."px;'  class='switch_".$bank_option_info['sequence'][$step]."' state='".$bank_option_info['sequence'][$step]."'></div>";  
+					}				
 				echo "</span></div>"; 
 			}
 		}	

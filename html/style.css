@@ -29,6 +29,12 @@
 	}
 	
 	
+	#refresh {
+		position:relative;
+		
+	}
+	
+	
 	#edit_grid {
 		margin-bottom:50px;
 		width:1000px;
@@ -42,10 +48,10 @@
 	
 	
 	#flash {
-	    left: 273px;
-	    position: absolute;
-	    top: 560px;
-	    z-index: 10;
+		left: 275px;
+		position: absolute;
+		top: 100px;
+		z-index: 10;
 	}
 	
 	.bank_option {
@@ -72,15 +78,16 @@
 	}
 	
 	.loop_option {
-		float:left;
-		width:14px;
-		margin-top: -1px;
+		float: left;
+		width: 14px;
+		margin-top: 3px;
+		margin-left: 7px;
 	}
 	
 	.overplay {
 		float: left;
 		margin-left: 6px;
-		margin-top: -1px;
+		margin-top: 3px;
 		width: 14px;
 		margin-right:41px;
 	}
@@ -88,18 +95,17 @@
 	.bank_option .switches div {
 		width:10px;
 		height:10px;
-		margin-left:5px; 
-		border:1px solid black; 
-		float:left;
+		border:1px solid #7FA5C4; 
+		position:absolute;
 		cursor:pointer; 
 	}
 	
 	.switches {
 		position:absolute;
 		z-index:200;
-		
+		left:322px;
 	}
-
+	
 
 	.switch_0, .switch_ {
 		background-color:#fff;
@@ -129,31 +135,32 @@
 	
 	
 	#volume_label {
-		font-size: 13px;
-		left: 104px;
-		position: relative;
-		top: 40px;
-		display:inline;
+	    font-size: 13px;
+	    left: 173px;
+	    position: absolute;
+	    top: 210px;
 	}
 	
 	#loop_label {
-		-moz-transform: rotate(-60deg);
-		-webkit-transform: rotate(-60deg); 
-		left: 140px;
-		position: relative;
-		top: 29px;
-		width: 30px;	
-		font-size: 13px;
-		display:inline;
+	    -moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+	    font-size: 13px;
+	    left: 256px;
+	    position: absolute;
+	    top: 207px;
+	    width: 30px;
 	}	
 	
 	#overplay_label {
-		-moz-transform: rotate(-60deg);
-		-webkit-transform: rotate(-60deg); 
-		font-size: 13px;
-		left: 126px;
-		position: relative;
-		top: 22px;
-		width: 30px;
-		display:inline;
-	}		
+	    -moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+	    font-size: 13px;
+	    left: 233px;
+	    position: absolute;
+	    top: 207px;
+	    width: 30px;
+	}	
+	
+	.ui-slider-handle {
+		width:3px !important;
+	}	
