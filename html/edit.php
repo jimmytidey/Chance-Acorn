@@ -55,6 +55,8 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 				<input type='button' value='save' name='form_submit' id='save_settings'/>
 			</p>
 		</form >
+		<a href='explorer?root=<?=$project_name ?>' id='explorer' target='_blank' frameborder="0" >Launch file uploader</a>
+		
 	</div>
 	
 
@@ -76,10 +78,7 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		height="700" name="mymovie" align="middle" allowScriptAccess="sameDomain"
 		type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" />
 		</object> 			
-	</div>
-	
-	<!--<iframe src='explorer?root=<?=$project_name ?>' id='explorer' frameborder="0" ></iframe> -->
-	
+	</div>	
 	
 			
 <script type="text/javascript">
