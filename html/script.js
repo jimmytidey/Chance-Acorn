@@ -103,8 +103,7 @@ $(document).ready(function() {
 	});
 	
 	//this to poll server for file structure updates
-
-	//grid.poll()
+	grid.poll()
 	
 	$('#save_settings').click(function() {
 		grid.saveSettings();

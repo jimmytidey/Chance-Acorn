@@ -55,13 +55,13 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 				<input type='button' value='save' name='form_submit' id='save_settings'/>
 			</p>
 		</form >
-		<a href='explorer?root=<?=$project_name ?>' target='_blank' frameborder="0" >Launch file uploader</a>
 		
+		<a href='explorer?root=<?=$project_name ?>' id='explore_launch' target='_blank' frameborder="0" >Launch file uploader</a>
 	</div>
 	
 
 
-	<input type='button' id='refresh' value='refresh' /> 
+	<!-- <input type='button' id='refresh' value='refresh' /> -->
 	
 	<div id='edit_grid' ></div> 
 	

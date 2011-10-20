@@ -28,6 +28,10 @@
 	    border:1px solid black;
 	}
 	
+	#explore_launch {
+	    float: right;
+	    margin-top: -34px;	
+	}
 	
 	#refresh {
 		position:relative;
