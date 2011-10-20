@@ -36,6 +36,11 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 	<script src="js/js/jquery-ui.custom.min.js"></script>
 	
 	<script type="text/javascript" src='script.js' > </script>
+	
+	<script type="text/javascript" src="swfobject.js"></script>
+		<script type="text/javascript">
+			swfobject.registerObject("myFlashContent", "9.0.0");
+	</script>
 
 </head>
 
@@ -67,17 +72,27 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 	
 	<div id='flash'>
 
-		<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
-		<param name="wmode" value="transparent">
-		<width="1000" height="700" id="Untitled-1" align="middle">
-		<param name="allowScriptAccess" value="sameDomain" />
-		<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
-		<param name="quality" value="high" />
-		<param name="bgcolor" value="#ffffff" />
-		<embed src="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" quality="high" bgcolor="#ffffff" width="1000"
-		height="700" name="mymovie" align="middle" allowScriptAccess="sameDomain"
-		type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" />
-		</object> 			
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="760" height="500" id="myFlashContent" align="top">
+				<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
+				<param name="quality" value="medium" />
+				<param name="salign" value="tl" />
+				<param name="wmode" value="transparent" />
+				<param name="allownetworking" value="all" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" width="760" height="500" align="top">
+					<param name="quality" value="medium" />
+					<param name="salign" value="tl" />
+					<param name="wmode" value="transparent" />
+					<param name="allownetworking" value="all" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflashplayer">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		
 	</div>	
 	
 			
