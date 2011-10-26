@@ -4,7 +4,7 @@
 <?
 include('functions.php'); 
 
-$project_name = $_GET['project_name']; 
+$project_name = urldecode($_GET['project_name']); 
  
 // hack to ensure all the files are readable  
 

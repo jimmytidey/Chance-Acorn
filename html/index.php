@@ -81,7 +81,9 @@ if (!empty($_POST['project_name']))
 	
 	foreach($folder_array as $project) {
 		
-		echo "<a href='edit.php?project_name=$user_id/$project'>$project</a><br/>";
+		$encoded_name = urlencode($user_id.'/'.$project);
+		
+		echo "<a href='edit.php?project_name=$encoded_name'>$project</a><br/>";
 	
 	}
 	
