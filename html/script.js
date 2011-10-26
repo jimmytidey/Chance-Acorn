@@ -86,7 +86,7 @@ grid.saveSettings = function() {
 }
 
 grid.poll = function() {
-	setTimeout("grid.refresh(); grid.poll();", 20000)
+	setInterval("grid.refresh()", 20000);
 }
 
 $(document).ready(function() {
