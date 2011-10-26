@@ -5,7 +5,7 @@ grid.grid_option_json['sequence'] = new Object();
 
 grid.refresh = function() {
 	$.ajax({
-	  url: 'edit_grid.php?project_name='+project_name,
+	  url: 'edit_grid.php?project_name='+grid.project_name,
 	  success: function(data) {
 		$('#edit_grid').html(data);
 		
@@ -86,16 +86,16 @@ grid.saveSettings = function() {
 }
 
 grid.poll = function() {
-	setTimeout("grid.refresh(); grid.poll();", 3000)
+	setTimeout("grid.refresh(); grid.poll();", 20000)
 }
 
 $(document).ready(function() {
-	
-	//load the grid 
-	grid.refresh();
-	
+
 	//make the project name available to javascript
 	grid.project_name = $('#project_name').html();
+	
+	//load the grid 
+	grid.refresh();	
 			
 	//bind click events 
 	$('#refresh').click(function() {
