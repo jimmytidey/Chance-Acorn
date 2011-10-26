@@ -2,20 +2,18 @@
 
 include('functions.php'); 
 
-
-
 if (!empty($_POST['project_name'])) 
 
 {
 	$project_name = $_POST['project_name']; 
 	
-	if (is_dir('projects/'.$project_name)) {
+	if (is_dir('projects/'.$user_id.'/'.$project_name)) {
 		echo "this project name already exists"; 
 	}
 	
 	else {
 		//make the project folder
-		mkdir('projects/'.$project_name, 0777);
+		mkdir('projects/'.$user_id.'/'.$project_name, 0777);
 		
 		//make the project info file
 		
@@ -23,19 +21,19 @@ if (!empty($_POST['project_name']))
 		$project_info_array['bpl'] = '16';
 		$project_info_array['steps'] = '20';
 		
-		
-		write_json('projects/'.$project_name."/project_info.json", $project_info_array);
+		write_json('projects/'.$user_id.'/'.$project_name."/project_info.json", $project_info_array);
 
 	}
 }
-	
+
+include('header.php');
  
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
-
 
 <style type="text/css">
 #container {
@@ -75,12 +73,15 @@ if (!empty($_POST['project_name']))
 	
 	<h3>Existing projects</h3> 
 	<?
+	
+
 	// get each entry
-	$folder_array = structure_list('projects/', 'dir');
+	$folder_array = structure_list('projects/'.$user_id.'/', 'dir');
+	
 	
 	foreach($folder_array as $project) {
 		
-		echo "<a href='edit.php?project_name=$project'>$project</a><br/>";
+		echo "<a href='edit.php?project_name=$user_id/$project'>$project</a><br/>";
 	
 	}
 	
@@ -88,5 +89,4 @@ if (!empty($_POST['project_name']))
 	?>
 	
 </div> 
-</body>
-</html>
+

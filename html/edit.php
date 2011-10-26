@@ -12,7 +12,7 @@ $beats_per_second = $project_info['bpm']/60;
 $seconds_per_beat = 1/$beats_per_second; 
 $step_time =($seconds_per_beat * $project_info['bpl'])*1000; 
 
-
+include('header.php');
 
 
 ?>
@@ -64,16 +64,16 @@ $step_time =($seconds_per_beat * $project_info['bpl'])*1000;
 		<a href='explorer?root=<?=$project_name ?>' id='explore_launch' target='_blank' frameborder="0" >Launch file uploader</a>
 	</div>
 	
-
-
 	<!-- <input type='button' id='refresh' value='refresh' /> -->
+	
+	<div id="bank_add"> </div>
 	
 	<div id='edit_grid' ></div> 
 	
 	<div id='flash'>
 
 		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="760" height="1000" id="myFlashContent" align="top">
-				<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" />
+				<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?= $user_id.'/'.$project_name ?>" />
 				<param name="quality" value="medium" />
 				<param name="salign" value="tl" />
 				<param name="wmode" value="transparent" />
@@ -105,14 +105,4 @@ try {
 var pageTracker = _gat._getTracker("UA-15474551-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-
-
-
-
-</body>
-</html>
-
-
-
-	
 

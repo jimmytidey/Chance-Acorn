@@ -7,9 +7,7 @@
 	 
 	$project_name = $_GET['project_name'];
 	$bank_name = $_GET['bank_name'];
-	$bank_option_name = $_GET['bank_option_name'];
-	
-	 
+	$bank_option_name = $_GET['bank_option_name'];	
 	
 	print_r($json);
 	

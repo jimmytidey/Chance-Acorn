@@ -2,6 +2,7 @@
 
 // Jimmy's hack
 
+include('../header.php');
 
 setcookie("root", $_GET['root'], time()+3600);
 
@@ -124,4 +125,5 @@ if(ConfService::getConf("JS_DEBUG")){
 	}
 	print($content);
 }
+
 ?>

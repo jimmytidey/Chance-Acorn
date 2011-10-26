@@ -5,6 +5,7 @@ function structure_list($folder_name, $type) {
 	// open this directory 
 	$myDirectory = opendir($folder_name);
 	
+	$dirArray = '';
 	// get each entry
 	while($entryName = readdir($myDirectory)) {
 
