@@ -1,5 +1,5 @@
 <?
-
+include('header.php');
 include('functions.php'); 
 
 if (!empty($_POST['project_name'])) 
@@ -26,7 +26,7 @@ if (!empty($_POST['project_name']))
 	}
 }
 
-include('header.php');
+
  
 ?>
 
