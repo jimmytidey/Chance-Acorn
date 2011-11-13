@@ -23,7 +23,7 @@ if (!empty($bank_array)) {
 
 	//loop through all the banks 
 	foreach ($bank_array as $bank_name) {
-		echo '<h3 class="bank_name">'.$bank_name.'</h3>';
+		echo '<div class="bank"><h3 class="bank_name">'.$bank_name.'</h3>';
 		
 		//in each bank, find out which bank options are saved 
 		$bank_options = structure_list('projects/'.$project_name.'/'.$bank_name, 'dir');
@@ -57,24 +57,31 @@ if (!empty($bank_array)) {
 				//echo the name of this bank option 
 				echo "<div class='bank_option ".$bank_option_name."'><p class='bank_option_name'>".$bank_option_name."</p>";
 					?>
+						<img src='resources/folder.png' class='upload_icon' />
+						<div class="volume" data-volume='<? echo $bank_option_info['volume'] ?>' ></div>
+						<input type="checkbox" name="loop" class='loop_option' data-state='<? echo $bank_option_info['loop']; ?>' <? if ($bank_option_info['loop']=='true') {echo "checked='checked'";} ?> /> 
+						<input type="checkbox" name="loop" class='overplay' data-state='<? echo $bank_option_info['overplay']; ?>' <? if ($bank_option_info['overplay']=='true') {echo "checked='checked'";} ?> />
 						
-						<div class="volume" volume='<? echo $bank_option_info['volume'] ?>' ></div>
-						<input type="checkbox" name="loop" class='loop_option' state='<? echo $bank_option_info['loop']; ?>' <? if ($bank_option_info['loop']=='true') {echo "checked='checked'";} ?> /> 
-						<input type="checkbox" name="loop" class='overplay' state='<? echo $bank_option_info['overplay']; ?>' <? if ($bank_option_info['overplay']=='true') {echo "checked='checked'";} ?> />
 						
 					<?
 					//loop through and draw each step 
 					$step_count = count($bank_option_info['sequence']);
 					
-					?> <span class='switches'> <? 
+					?> <div class='switches'> <? 
 					for($step=0; $step < $step_count; $step++) {
 						$left = $step * 17 ; 
-						echo "<div style='left:".$left."px;'  class='switch_".$bank_option_info['sequence'][$step]."' state='".$bank_option_info['sequence'][$step]."'></div>";  
+						echo "<div style='left:".$left."px;'  class='switch_".$bank_option_info['sequence'][$step]."' data-state='".$bank_option_info['sequence'][$step]."'></div>";  
 					}				
-				echo "</span></div>"; 
+				echo "</div></div>"; 
 			}
 		}	
+		
+		echo "<input class='option_add_name' type='text' value='option name' /> <a class='option_add' >Add &raquo;</a></div>";		
 	}
 }
 
 ?>
+
+<div id='bank_add'>
+	<input id='bank_add_name' type='text' value='bank name' /> <input id="bank_add_btn" type='button' value='add bank' /> 
+</div>

@@ -3,7 +3,7 @@
 include('functions.php'); 
 
 if (!empty($_GET['project_name'])) { 
-	$project_name = $_GET['project_name']; 
+	$project_name = urldecode($_GET['project_name']); 
 }
 
 else {
@@ -11,7 +11,7 @@ else {
 }
 
 if (!empty($_GET['bank_name'])) { 
-	$bank_name = $_GET['bank_name']; 
+	$bank_name = urldecode($_GET['bank_name']); 
 }
 
 else {

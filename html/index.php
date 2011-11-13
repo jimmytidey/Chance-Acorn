@@ -15,18 +15,13 @@ if (!empty($_POST['project_name']))
 		//make the project folder
 		mkdir('projects/'.$user_id.'/'.$project_name, 0777);
 		
-		//make the project info file
-		
-		$project_info_array['bpm'] = '120';
-		$project_info_array['bpl'] = '16';
-		$project_info_array['steps'] = '20';
-		
-		write_json('projects/'.$user_id.'/'.$project_name."/project_info.json", $project_info_array);
+		//copt template into the file 
+		$src = "TEMPLATE/*";
+		$dest = 'projects/'.$user_id.'/'.$project_name;
 
+		shell_exec("cp -r $src $dest");
 	}
 }
-
-
  
 ?>
 
@@ -34,40 +29,23 @@ if (!empty($_POST['project_name']))
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
-<style type="text/css">
-#container {
-	position:absolute;
-	width: 1000px; 
-	left:50%; 
-	margin-left:-500px; 
-	border:1px solid black;
-	padding:30px;
-}
-
-.channel_container {
-	float:left; 
-	height:700px; 
-	padding-right:20px; 
-	width:230px;
-}
-
-</style>
-<script type="text/javascript"
-    src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js">
-</script>
-
-
-
-</script>
+	<link rel='stylesheet' href="style.css" >
 </head>
 <body> 
 
-<div id='container'> 
-	<form method="post" action="<?php echo $PHP_SELF;?>">
+<div id='home_page'> 
+	
+	<h1 id='title'>Riff</h1>
+	
+	<p id='tag_line'>Felicitous composition</p>
+	
+	<form method="post" action="index.php">
 		
-		<p>Project name  <input type='text' id='project_name' name='project_name' /></p>
-		<input type='submit' value='save new project' /> 
+		<h3>Add new project</h3>
+		<p><input type='text' id='project_name' name='project_name' value='new project name' /><input type='submit' value='save new project' id='save_project_button' /></p>
+		 
 		
 	</form> 
 	

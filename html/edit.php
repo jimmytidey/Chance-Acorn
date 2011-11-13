@@ -16,8 +16,8 @@ include('header.php');
 
 
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-            "http://www.w3.org/TR/html4/loose.dtd">
+
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -27,19 +27,22 @@ include('header.php');
 	
 	<link rel='stylesheet' href="style.css" >
 
-	<script type="text/javascript">var project_name = "<?=$project_name ?>";</script>
+	<script type="text/javascript" type="text/javascript" >var project_name = "<?=$project_name ?>";</script>
 	
 	<link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css">
 	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"> </script>
 
-	<script src="js/js/jquery-ui.custom.min.js"></script>
+	<!-- <script src="js/js/jquery-ui.custom.min.js" type="text/javascript"></script> -->
 	
-	<script type="text/javascript" src='script.js' > </script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 	
-	<script type="text/javascript" src="swfobject.js"></script>
-		<script type="text/javascript">
-			swfobject.registerObject("myFlashContent", "9.0.0");
+	<script type="text/javascript" src='js/script.js' > </script>
+	
+	<script type="text/javascript" src="js/swfobject.js"></script>
+	
+	<script type="text/javascript">
+		swfobject.registerObject("myFlashContent", "9.0.0");
 	</script>
 
 </head>
@@ -52,36 +55,40 @@ include('header.php');
 	<h3><a href='http://chance-acorn.jimmytidey.co.uk/'>Back</a>  |  <span id='project_name'><?=$project_name ?></span> </h3> 
 	
 	<div id='controls'> 
-		<form method="get" action="<?php echo $PHP_SELF;?>">
+		<form method="get" action="edit.php">
 			<p>BPM <input type='text' id='bpm' name='bpm' size='3' value='<? echo $project_info['bpm'] ?>' />
 				Beats per loop <input type='text' id='bpl' name='bpl' size='2'  value='<? echo $project_info['bpl']?>' /> 
 				Number of steps <input type='text' id='steps' name='steps' size='2'  value='<? echo $project_info['steps'] ?>' />
-				<input type='hidden' name='project_name' value='<?=$project_name ?>' />	
+				<input type='hidden' name='project_name' value='<?=$project_name ?>' id='project_name_field' />	
 				<input type='button' value='save' name='form_submit' id='save_settings'/>
 			</p>
 		</form >
 		
-		<a href='explorer?root=<?=$project_name ?>' id='explore_launch' target='_blank' frameborder="0" >Launch file uploader</a>
+		<input type='button' id='explore_launch' value='Launch file manager' />
 	</div>
 	
 	<!-- <input type='button' id='refresh' value='refresh' /> -->
 	
-	<div id="bank_add"> </div>
+	
+	<div>
+	
+	<div>	
+	
 	
 	<div id='edit_grid' ></div> 
 	
 	<div id='flash'>
 
-		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="760" height="1000" id="myFlashContent" align="top">
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="760" height="1000" id="myFlashContent">
 				<param name="movie" value="random_seed_composer.swf?project_info_location=list.php?project_name=<?= $user_id.'/'.$project_name ?>" />
 				<param name="quality" value="medium" />
-				<param name="salign" value="tl" />
+		
 				<param name="wmode" value="transparent" />
 				<param name="allownetworking" value="all" />
 				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" width="760" height="1000" align="top">
+				<object type="application/x-shockwave-flash" data="random_seed_composer.swf?project_info_location=list.php?project_name=<?=$project_name ?>" width="760" height="1000" >
 					<param name="quality" value="medium" />
-					<param name="salign" value="tl" />
+				
 					<param name="wmode" value="transparent" />
 					<param name="allownetworking" value="all" />
 				<!--<![endif]-->
@@ -94,7 +101,7 @@ include('header.php');
 			</object>
 		
 	</div>	
-	
+</div>
 			
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -106,3 +113,5 @@ var pageTracker = _gat._getTracker("UA-15474551-1");
 pageTracker._trackPageview();
 } catch(err) {}</script>
 
+</body>
+</html>
