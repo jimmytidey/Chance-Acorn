@@ -34,11 +34,11 @@ include('header.php');
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"> </script>
 
 	<!-- <script src="js/js/jquery-ui.custom.min.js" type="text/javascript"></script> -->
-	
+
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-	
+
 	<script type="text/javascript" src='js/script.js' > </script>
-	
+
 	<script type="text/javascript" src="js/swfobject.js"></script>
 	
 	<script type="text/javascript">
@@ -63,6 +63,8 @@ include('header.php');
 				<input type='button' value='save' name='form_submit' id='save_settings'/>
 			</p>
 		</form >
+		
+		<a href='player.php?project_name=<?=$project_name ?>' target='_blank' >View the player</a>
 		
 		<input type='button' id='explore_launch' value='Launch file manager' />
 	</div>
