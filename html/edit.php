@@ -64,17 +64,19 @@ include('header.php');
 			</p>
 		</form >
 		
-		<a href='player.php?project_name=<?=$project_name ?>' target='_blank' >View the player</a>
+		<a href='player.php?project_name=<?=$project_name ?>' target='_blank' id='view_player_link' >View the player</a>
 		
 		<input type='button' id='explore_launch' value='Launch file manager' />
 	</div>
 	
 	<!-- <input type='button' id='refresh' value='refresh' /> -->
 	
+	<div id='instructions'>
+		<p></p>
+			
+	</div>
+
 	
-	<div>
-	
-	<div>	
 	
 	
 	<div id='edit_grid' ></div> 

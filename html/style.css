@@ -15,6 +15,7 @@
 		padding-left:30px;
 		font-family: arial, helvetica; 
 		height: 1900px;
+		margin-bottom:20px;
 	}
 
 /* Home page ******************** */	
@@ -246,6 +247,11 @@
 	    top: 200px;
 	}
 	
+	#view_player_link {
+		float:right;
+		margin-top:-36px;
+		margin-right:160px;
+	}
 	
 	
 	.ui-slider-handle {
