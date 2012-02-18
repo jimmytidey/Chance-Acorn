@@ -1,0 +1,46 @@
+09-26-11 6:33:12	82.46.7.160	INFO	admin	Log In	
+09-26-11 6:34:05	91.125.70.108	INFO	admin	Log In	
+09-26-11 7:02:53	91.125.70.108	INFO	admin	Log Out	
+09-26-11 7:03:01	82.46.7.160	INFO	admin	Log Out	
+09-26-11 7:04:26	91.125.70.108	INFO	admin	Log In	
+09-26-11 11:14:47	82.46.7.160	INFO	admin	Log In	
+09-26-11 11:22:32	82.46.7.160	INFO	admin	Switch Repository	rep. id=1
+09-26-11 11:22:54	82.46.7.160	INFO	admin	Switch Repository	rep. id=0
+09-26-11 11:23:21	82.46.7.160	INFO	admin	Move	files=/guitar/guitar1/RECKONER GUITAR STEM.mp3;destination=/recycle_bin
+09-26-11 11:26:15	82.46.7.160	INFO	admin	Upload File	file=/guitar/guitar1/guitar 1.mp3
+09-26-11 11:38:42	82.46.7.160	INFO	admin	Move	files=/drums/drums1/RECKONER DRUM STEM.mp3;destination=/recycle_bin
+09-26-11 11:41:29	82.46.7.160	INFO	admin	Upload File	file=/drums/drums1/Drums 1.mp3
+09-26-11 12:00:00	82.46.7.160	INFO	admin	Move	files=/bass/bass1/RECKONER BASS STEM.mp3;destination=/recycle_bin
+09-26-11 12:02:37	82.46.7.160	INFO	admin	Upload File	file=/bass/bass1/bass 1.mp3
+09-26-11 12:09:52	82.46.7.160	INFO	admin	Move	files=/backing vocal/BV 1/RECKONER BACKING VOCAL STEM.mp3;destination=/recycle_bin
+09-26-11 12:12:27	82.46.7.160	INFO	admin	Upload File	file=/backing vocal/BV 1/bvs 1.mp3
+09-26-11 12:13:17	82.46.7.160	INFO	admin	Create Dir	dir=/backing vocal/BV 2
+09-26-11 12:15:51	82.46.7.160	INFO	admin	Upload File	file=/backing vocal/BV 2/bvs 2.mp3
+09-26-11 12:16:09	82.46.7.160	INFO	admin	Move	files=/Vocal/vocal 1/RECKONER LEAD VOCAL STEM.mp3;destination=/recycle_bin
+09-26-11 12:18:52	82.46.7.160	INFO	admin	Upload File	file=/Vocal/vocal 1/vox 1.mp3
+09-26-11 12:32:24	82.46.7.160	INFO	admin	error	message=The directory /Vocal is not writeable. There might be a permission problem, please check with your administrator.
+09-26-11 12:32:42	82.46.7.160	INFO	admin	error	message=The directory /Vocal is not writeable. There might be a permission problem, please check with your administrator.
+09-26-11 12:33:40	82.46.7.160	INFO	admin	error	message=opendir(ajxp.fs://0//StringsPiano) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: &quot;fsAccessWrapper::dir_opendir&quot; call failed
+09-26-11 12:35:21	82.46.7.160	INFO	admin	Move	files=/StringsPiano/strings 1/RECKONER PIANO_STRINGS STEM.mp3;destination=/recycle_bin
+09-26-11 12:38:28	82.46.7.160	INFO	admin	Upload File	file=/StringsPiano/strings 1/pianostr 1.mp3
+09-26-11 12:38:47	82.46.7.160	INFO	admin	Create Dir	dir=/StringsPiano/pnostr 2
+09-26-11 12:44:18	82.46.7.160	INFO	admin	Upload File	file=/StringsPiano/pnostr 2/pnostr 2.mp3
+09-26-11 13:08:49	82.46.7.160	INFO	admin	Log Out	
+09-26-11 13:08:54	82.46.7.160	INFO	admin	Log In	
+09-26-11 13:09:33	82.46.7.160	INFO	admin	Create Dir	dir=/Vocal/vox 2
+09-26-11 13:09:47	82.46.7.160	INFO	admin	Create Dir	dir=/Vocal/vox 3
+09-26-11 13:13:40	82.46.7.160	INFO	admin	Upload File	file=/Vocal/vox 2/vox 2.mp3
+09-26-11 13:41:37	82.46.7.160	INFO	admin	Upload File	file=/Vocal/vox 3/vox 3.mp3
+09-26-11 13:50:52	82.46.7.160	INFO	admin	Create Dir	dir=/guitar/gtr 2
+09-26-11 13:53:46	82.46.7.160	INFO	admin	Upload File	file=/guitar/gtr 2/gtr 2.mp3
+09-26-11 14:12:02	82.46.7.160	INFO	admin	Create Dir	dir=/drums/drums 2
+09-26-11 14:12:08	82.46.7.160	INFO	admin	Create Dir	dir=/drums/drums 3
+09-26-11 14:17:26	82.46.7.160	INFO	admin	Upload File	file=/drums/drums 2/drums 2.mp3
+09-26-11 14:24:27	82.46.7.160	INFO	admin	Upload File	file=/drums/drums 3/drums 3.mp3
+09-26-11 14:34:13	82.46.7.160	INFO	admin	Create Dir	dir=/StringsPiano/pnostr gangsta
+09-26-11 14:40:32	82.46.7.160	INFO	admin	Upload File	file=/StringsPiano/pnostr gangsta/pnostr gangsta.mp3
+09-26-11 14:40:33	82.46.7.160	INFO	admin	error	message=opendir(ajxp.fs://0//StringsPiano/pnostr gangsta) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: &quot;fsAccessWrapper::dir_opendir&quot; call failed
+09-26-11 14:50:52	82.46.7.160	INFO	admin	error	message=opendir(ajxp.fs://0//StringsPiano/strings 1) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: &quot;fsAccessWrapper::dir_opendir&quot; call failed
+09-26-11 14:51:35	82.46.7.160	INFO	admin	Create Dir	dir=/StringsPiano/piano
+09-26-11 14:57:45	82.46.7.160	INFO	admin	Upload File	file=/StringsPiano/piano/piano.mp3
+09-26-11 15:57:45	82.46.7.160	INFO	admin	Log Out	

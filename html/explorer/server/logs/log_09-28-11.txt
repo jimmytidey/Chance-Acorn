@@ -1,0 +1,19 @@
+09-28-11 1:18:14	91.125.70.108	INFO	admin	Log Out	
+09-28-11 1:27:33	82.46.7.160	INFO	admin	Log In	
+09-28-11 1:30:58	91.125.70.108	INFO	shared	error	message=You are not allowed to access this resource.
+09-28-11 1:31:04	91.125.70.108	INFO	shared	error	message=You are not allowed to access this resource.
+09-28-11 1:31:05	91.125.70.108	INFO	shared	error	message=You are not allowed to access this resource.
+09-28-11 1:31:14	91.125.70.108	INFO	shared	error	message=You are not allowed to access this resource.
+09-28-11 2:08:04	82.46.7.160	INFO	admin	Log Out	
+09-28-11 3:51:49	82.46.7.160	INFO	admin	Log In	
+09-28-11 4:16:45	82.46.7.160	INFO	admin	Log Out	
+09-28-11 4:17:07	82.46.7.160	INFO	admin	Log In	
+09-28-11 4:41:13	82.46.7.160	INFO	admin	Log Out	
+09-28-11 4:51:05	82.46.7.160	INFO	admin	Log In	
+09-28-11 5:15:40	82.46.7.160	INFO	admin	Log Out	
+09-28-11 6:32:49	91.125.70.108	INFO	admin	Log In	
+09-28-11 7:01:10	91.125.70.108	INFO	admin	error	message=You are not allowed to access this resource.
+09-28-11 7:11:47	91.125.70.108	INFO	admin	error	message=You are not allowed to access this resource.
+09-28-11 7:21:34	91.125.70.108	INFO	admin	Log Out	
+09-28-11 8:29:07	82.46.7.160	INFO	admin	Log In	
+09-28-11 9:27:39	82.46.7.160	INFO	admin	Log Out	
